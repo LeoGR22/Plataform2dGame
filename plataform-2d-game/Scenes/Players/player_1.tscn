@@ -1,11 +1,28 @@
 [gd_scene format=3 uid="uid://c0h4mek8sjm5r"]
 
 [ext_resource type="Texture2D" uid="uid://bita2mcljbbct" path="res://Sprites/Knight/_Fall.png" id="1_a1ydv"]
+[ext_resource type="Texture2D" uid="uid://ckf0qgxtwou8b" path="res://Sprites/Knight/_Attack.png" id="1_a2yw6"]
 [ext_resource type="Texture2D" uid="uid://bfrhyvqkgt25r" path="res://Sprites/Knight/_Idle.png" id="2_a2yw6"]
 [ext_resource type="Texture2D" uid="uid://ddr6a4qifx80q" path="res://Sprites/Knight/_Jump.png" id="3_ym6ut"]
 [ext_resource type="Texture2D" uid="uid://xbkapkmxvuxo" path="res://Sprites/Knight/_Run.png" id="4_8rdhk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mkua0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ym6ut"]
+atlas = ExtResource("1_a2yw6")
+region = Rect2(0, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rdhk"]
+atlas = ExtResource("1_a2yw6")
+region = Rect2(120, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1s1c"]
+atlas = ExtResource("1_a2yw6")
+region = Rect2(240, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3d84"]
+atlas = ExtResource("1_a2yw6")
+region = Rect2(360, 0, 120, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e2sqb"]
 atlas = ExtResource("1_a1ydv")
@@ -115,6 +132,23 @@ region = Rect2(1080, 0, 120, 80)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_ym6ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rdhk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1s1c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o3d84")
+}],
+"loop": true,
+"name": &"Attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_e2sqb")
 }, {
 "duration": 1.0,
@@ -222,6 +256,6 @@ shape = SubResource("CapsuleShape2D_mkua0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1570439602]
 sprite_frames = SubResource("SpriteFrames_k1s1c")
-animation = &"Idle"
-frame_progress = 0.8854795
+animation = &"Attack"
+frame_progress = 0.77564573
 offset = Vector2(0, -40)
