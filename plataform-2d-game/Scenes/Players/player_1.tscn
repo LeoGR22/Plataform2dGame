@@ -248,16 +248,14 @@ animations = [{
 "speed": 15.0
 }]
 
-[node name="Player1" type="Node2D" unique_id=1173258124]
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2116644060]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=2116644060 groups=["players"]]
 script = ExtResource("1_ym6ut")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=697084063]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=697084063]
 position = Vector2(0, -15)
 shape = SubResource("CapsuleShape2D_mkua0")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1570439602]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1570439602]
 sprite_frames = SubResource("SpriteFrames_k1s1c")
 animation = &"Idle"
 offset = Vector2(5, -40)
