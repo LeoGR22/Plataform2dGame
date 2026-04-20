@@ -1,21 +1,16 @@
-[gd_scene format=3 uid="uid://b1w1eqcp13dvs"]
+[gd_scene format=4 uid="uid://b1w1eqcp13dvs"]
 
 [ext_resource type="PackedScene" uid="uid://c0h4mek8sjm5r" path="res://Scenes/Players/player_1.tscn" id="1_wm1cg"]
 [ext_resource type="PackedScene" uid="uid://s2pun58acqwx" path="res://Scenes/Cameras/follow_camera.tscn" id="2_f2pdl"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bqwq8"]
-size = Vector2(841, 20)
+[ext_resource type="PackedScene" uid="uid://drg8woylvsawb" path="res://Scenes/Tilesets/tile_map_layer.tscn" id="3_1hoj0"]
 
 [node name="word" type="Node2D" unique_id=39217742]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=489850240]
-position = Vector2(50, 0)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=537731336]
-position = Vector2(533, 695)
-shape = SubResource("RectangleShape2D_bqwq8")
-
 [node name="Player1" parent="." unique_id=1173258124 instance=ExtResource("1_wm1cg")]
-position = Vector2(475, 189)
+z_index = 1
+position = Vector2(475, 529)
 
 [node name="FollowCamera" parent="." unique_id=57774904 instance=ExtResource("2_f2pdl")]
+
+[node name="TileMapLayer" parent="." unique_id=795208441 instance=ExtResource("3_1hoj0")]
+tile_map_data = PackedByteArray("AAAdACIAAAABAAAAAAAeACIAAAABAAAAAAAcACIAAAABAAAAAAAfACIAAAABAAAAAAAbACIAAAAAAAAAAAAgACIAAAACAAAAAAAcACMAAAABAAEAAAAdACMAAAABAAEAAAAeACMAAAABAAEAAAAfACMAAAABAAEAAAAdACQAAAABAAEAAAAeACQAAAABAAEAAAAgACMAAAACAAEAAAAfACQAAAABAAEAAAAcACQAAAABAAEAAAAfACUAAAACAAIAAAAeACUAAAABAAIAAAAdACUAAAABAAIAAAAcACUAAAAAAAIAAAAgACQAAAACAAIAAAAbACMAAAAAAAEAAAAbACQAAAAAAAIAAAAmACgAAAABAAAAAAAnACgAAAABAAAAAAAoACgAAAABAAAAAAApACgAAAABAAAAAAAqACgAAAABAAAAAAArACgAAAABAAAAAAAsACgAAAABAAAAAAAtACgAAAABAAAAAAAuACgAAAABAAAAAAAvACgAAAABAAAAAAAwACgAAAABAAAAAAAxACgAAAABAAAAAAAyACgAAAABAAAAAAAzACgAAAABAAAAAAAtACUAAAABAAAAAAAuACUAAAABAAAAAAAvACUAAAABAAAAAAAwACUAAAABAAAAAAAxACUAAAABAAAAAAAyACUAAAABAAAAAAAvACIAAAABAAAAAAAwACIAAAABAAAAAAAxACIAAAABAAAAAAAyACIAAAABAAAAAAAmACEAAAABAAAAAAAnACEAAAABAAAAAAAoACEAAAABAAAAAAApACEAAAABAAAAAAA=")
