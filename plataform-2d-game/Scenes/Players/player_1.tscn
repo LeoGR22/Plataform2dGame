@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://bita2mcljbbct" path="res://Sprites/Knight/_Fall.png" id="1_a1ydv"]
 [ext_resource type="Texture2D" uid="uid://ckf0qgxtwou8b" path="res://Sprites/Knight/_Attack.png" id="1_a2yw6"]
-[ext_resource type="Script" uid="uid://mulmv4soap2m" path="res://Scripts/Players/Move.gd" id="1_ym6ut"]
+[ext_resource type="Script" uid="uid://mulmv4soap2m" path="res://Scripts/Players/move.gd" id="1_ym6ut"]
 [ext_resource type="Texture2D" uid="uid://bfrhyvqkgt25r" path="res://Sprites/Knight/_Idle.png" id="2_a2yw6"]
 [ext_resource type="Texture2D" uid="uid://ddr6a4qifx80q" path="res://Sprites/Knight/_Jump.png" id="3_ym6ut"]
 [ext_resource type="Texture2D" uid="uid://xbkapkmxvuxo" path="res://Sprites/Knight/_Run.png" id="4_8rdhk"]
-[ext_resource type="Script" uid="uid://brfgbmryn5rpu" path="res://Scripts/Players/Animation.gd" id="7_8rdhk"]
+[ext_resource type="Script" uid="uid://brfgbmryn5rpu" path="res://Scripts/Players/animation.gd" id="7_8rdhk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mkua0"]
 
@@ -255,8 +255,9 @@ script = ExtResource("1_ym6ut")
 position = Vector2(0, -15)
 shape = SubResource("CapsuleShape2D_mkua0")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1570439602]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1570439602 groups=["players"]]
 sprite_frames = SubResource("SpriteFrames_k1s1c")
 animation = &"Idle"
+frame_progress = 0.48669374
 offset = Vector2(5, -40)
 script = ExtResource("7_8rdhk")

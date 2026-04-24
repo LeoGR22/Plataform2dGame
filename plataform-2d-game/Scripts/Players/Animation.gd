@@ -1,6 +1,6 @@
 extends AnimatedSprite2D
 
-enum State {IDLE, RUNNING, JUMPING, FALLING}
+enum State {IDLE, RUNNING, JUMPING, FALLING, }
 
 
 func _ready() -> void:
