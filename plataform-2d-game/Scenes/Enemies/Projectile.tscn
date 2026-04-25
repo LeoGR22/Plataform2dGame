@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bww0tuib828mx"]
+
+[ext_resource type="Script" uid="uid://dq8187b31cawt" path="res://Scripts/Enemies/projectile.gd" id="1_fld28"]
+[ext_resource type="Texture2D" uid="uid://b1rb1ae4757kn" path="res://Sprites/VFX/bullet.png" id="2_xqss5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o4uc3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ja771"]
+atlas = ExtResource("2_xqss5")
+region = Rect2(0, 0, 4, 2)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u6lrr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ja771")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Projectile" type="Area2D" unique_id=1148077665]
+script = ExtResource("1_fld28")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=677969921]
+shape = SubResource("CircleShape2D_o4uc3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1409412836]
+sprite_frames = SubResource("SpriteFrames_u6lrr")
+animation = &"new_animation"
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1373134329]

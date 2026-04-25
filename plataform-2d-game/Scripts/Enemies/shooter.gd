@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const SPEED = 60.0
-const SHOOT_RANGE = 300.0
+const SHOOT_RANGE = 200.0
 const SHOOT_COOLDOWN = 2.0
 
 # Arraste sua ProjectileScene no inspetor
