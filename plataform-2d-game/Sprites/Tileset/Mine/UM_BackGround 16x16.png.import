@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnqbjo0e5j04j"
-path="res://.godot/imported/ExampleTiles.png-a60f54365d0e3b4bc990596aa9cdbf61.ctex"
+uid="uid://dhhlkli0xm6gg"
+path="res://.godot/imported/UM_BackGround 16x16.png-8adcf7aa8d3fc744448de8e9e58c1f38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Tileset/ExampleTiles.png"
-dest_files=["res://.godot/imported/ExampleTiles.png-a60f54365d0e3b4bc990596aa9cdbf61.ctex"]
+source_file="res://Sprites/Tileset/Mine/UM_BackGround 16x16.png"
+dest_files=["res://.godot/imported/UM_BackGround 16x16.png-8adcf7aa8d3fc744448de8e9e58c1f38.ctex"]
 
 [params]
 

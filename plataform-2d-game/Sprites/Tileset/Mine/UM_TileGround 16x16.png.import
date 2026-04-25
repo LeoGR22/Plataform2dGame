@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdtsvftuw8yut"
-path="res://.godot/imported/BG3.png-7ba3164b0e53528c41efed93df288928.ctex"
+uid="uid://bi6tr0dbpe1xy"
+path="res://.godot/imported/UM_TileGround 16x16.png-474f6641a539dc9d528ffbb2984bbeb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Tileset/BG3.png"
-dest_files=["res://.godot/imported/BG3.png-7ba3164b0e53528c41efed93df288928.ctex"]
+source_file="res://Sprites/Tileset/Mine/UM_TileGround 16x16.png"
+dest_files=["res://.godot/imported/UM_TileGround 16x16.png-474f6641a539dc9d528ffbb2984bbeb5.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 extends AnimatedSprite2D
 
-enum State {IDLE, RUNNING, JUMPING, FALLING, }
+enum State {IDLE, RUNNING, JUMPING, FALLING, CROUCHING, CROUCH_WALKING}
 
 
 func _ready() -> void:
@@ -24,3 +24,7 @@ func manage_animations(curent_state: State, velocity_x: float) -> void:
 			play("Jump")
 		State.FALLING:
 			play("Fall")
+		State.CROUCHING:
+			play("Crouch")
+		State.CROUCH_WALKING:
+			play("CrouchWalk")

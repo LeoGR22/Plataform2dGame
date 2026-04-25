@@ -4,9 +4,9 @@
 
 [node name="FollowCamera" type="Node2D" unique_id=57774904]
 script = ExtResource("1_58sx1")
-move_speed = 10.0
+move_speed = 100.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2128193411]
 position = Vector2(-3, 0)
-zoom = Vector2(2.2, 2.2)
+zoom = Vector2(5.2, 5.2)
 position_smoothing_enabled = true

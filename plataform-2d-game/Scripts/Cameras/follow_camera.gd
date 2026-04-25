@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var move_speed = 5.0 #velocidade da suavização
-var height = 12
+var height = 25
 
 func _process(delta):
 	var players = get_tree().get_nodes_in_group("players")
